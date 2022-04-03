@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064DAAA427FA688400DB9CD7 /* SpaceUmbrellas.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 064DAAA327FA688400DB9CD7 /* SpaceUmbrellas.rcproject */; };
 		2DDAC30427F78FA2002D828A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30327F78FA2002D828A /* AppDelegate.swift */; };
 		2DDAC30627F78FA2002D828A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30527F78FA2002D828A /* ViewController.swift */; };
 		2DDAC30827F78FA2002D828A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30727F78FA2002D828A /* Experience.rcproject */; };
 		2DDAC30B27F78FA2002D828A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDAC30927F78FA2002D828A /* Main.storyboard */; };
 		2DDAC30D27F78FA3002D828A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDAC30C27F78FA3002D828A /* Assets.xcassets */; };
 		2DDAC31027F78FA3002D828A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDAC30E27F78FA3002D828A /* LaunchScreen.storyboard */; };
-		2DDAC33327F79D33002D828A /* SpaceUmbrellas.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC33227F79D32002D828A /* SpaceUmbrellas.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064DAAA327FA688400DB9CD7 /* SpaceUmbrellas.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SpaceUmbrellas.rcproject; sourceTree = "<group>"; };
 		2DDAC30027F78FA2002D828A /* preViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = preViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDAC30327F78FA2002D828A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDAC30527F78FA2002D828A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		2DDAC30F27F78FA3002D828A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DDAC31527F78FA4002D828A /* preViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = preViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDAC31F27F78FA4002D828A /* preViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = preViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DDAC33227F79D32002D828A /* SpaceUmbrellas.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = SpaceUmbrellas.rcproject; path = ../../arsimplepotal/Assets/SpaceUmbrellas.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 			children = (
 				2DDAC30327F78FA2002D828A /* AppDelegate.swift */,
 				2DDAC30527F78FA2002D828A /* ViewController.swift */,
+				064DAAA327FA688400DB9CD7 /* SpaceUmbrellas.rcproject */,
 				2DDAC30727F78FA2002D828A /* Experience.rcproject */,
-				2DDAC33227F79D32002D828A /* SpaceUmbrellas.rcproject */,
 				2DDAC30C27F78FA3002D828A /* Assets.xcassets */,
 				2DDAC30927F78FA2002D828A /* Main.storyboard */,
 				2DDAC30E27F78FA3002D828A /* LaunchScreen.storyboard */,
@@ -235,7 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDAC30627F78FA2002D828A /* ViewController.swift in Sources */,
-				2DDAC33327F79D33002D828A /* SpaceUmbrellas.rcproject in Sources */,
+				064DAAA427FA688400DB9CD7 /* SpaceUmbrellas.rcproject in Sources */,
 				2DDAC30427F78FA2002D828A /* AppDelegate.swift in Sources */,
 				2DDAC30827F78FA2002D828A /* Experience.rcproject in Sources */,
 			);
