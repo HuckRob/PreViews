@@ -47,15 +47,16 @@ class ViewController: UIViewController {
             node.addChildNode(planeNode)
             
             if imageAnchor.referenceImage.name == "StuffedShells"{
-//                if let modelScene = SCNScene(named:"art.scnassets/redchair.scn"){
-//                    if let modelNode = modelScene.rootNode.childNodes.first{
-//                        planeNode.addChildNode(modelNode)
-//                        modelNode.eulerAngles.x = .pi/2
-//
+           if let modelScene = SCNScene(named:"art.scnassets/redchair.scn"){
+                   if let modelNode = modelScene.rootNode.childNodes.first{
+                       planeNode.addChildNode(modelNode)
+                       modelNode.eulerAngles.x = .pi/2
+
                         //Portal Start
                         let innerSpaceSize: Float = 3.0 // [meters]
                         let innerSpaceMargin: Float = 0.02 // [meters]
                         let innerSpaceOcclusion: Float = 0.01 // [meters]
+                
                         // Add the box anchor to the scene
                         let portalAnchor = try! SpaceUmbrellas.loadScene()
                         arView.scene.anchors.append(portalAnchor)
@@ -68,8 +69,8 @@ class ViewController: UIViewController {
                         portalAnchor.addChild(occlusionBox)
                         
 //                       
-//            }
-//                }
+          }
+             }
             }
                     
         }
