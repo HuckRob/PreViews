@@ -5,6 +5,9 @@
   },
   "resources" : [
     {
+      "filename" : "Chipotle.arreferenceimage"
+    },
+    {
       "filename" : "StuffedShells.arreferenceimage"
     }
   ]
