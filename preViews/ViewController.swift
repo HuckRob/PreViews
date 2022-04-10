@@ -57,7 +57,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             node.addChildNode(planeNode)
             
             if imageAnchor.referenceImage.name ==  "Chipotle" {
-                if let modelScene = SCNScene(named:"SpaceUmbrellas"){
+                if let modelScene = SCNScene(named:"SpaceUmbrellas.rcproject"){
                     if let modelNode = modelScene.rootNode.childNodes.first{
                         planeNode.addChildNode(modelNode)
                         modelNode.eulerAngles.x = .pi/2
