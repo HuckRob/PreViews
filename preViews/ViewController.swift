@@ -11,18 +11,18 @@ import SceneKit
 import ARKit
 
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ViewController: UIViewController {
     
-    @IBOutlet var arView: ARSCNView!
+    @IBOutlet var arView: ARView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arView.delegate = self
+        //arView.delegate = self
         
         // Load the "Box" scene from the "Experience" Reality File
         // Show statistics such as fps and timing information
-        arView.showsStatistics=true
+    
         
         
         
@@ -68,7 +68,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         
                         // Add the box anchor to the scene
                         let portalAnchor = try! SpaceUmbrellas.loadScene()
-                        //arView.scene.anchors.append(portalAnchor)
+                        arView.scene.anchors.append(portalAnchor)
                         let boxSize: Float = innerSpaceSize + innerSpaceMargin
                         let boxMesh = MeshResource.generateBox(size: boxSize)
                         let material = OcclusionMaterial()

@@ -10,12 +10,12 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="preViews" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="33S-kO-JB0">
+                    <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="qsM-dm-p3l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                    </arView>
                     <connections>
-                        <outlet property="arView" destination="33S-kO-JB0" id="9mf-Ag-xRg"/>
+                        <outlet property="arView" destination="qsM-dm-p3l" id="jVQ-0l-Wsf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
