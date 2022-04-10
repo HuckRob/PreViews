@@ -10,13 +10,23 @@ import RealityKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, ARSCNViewDelegate {
     
-    @IBOutlet var arView: ARView!
+    @IBOutlet var arView: ARSCNView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        arView.delegate = self
+        
+        // Load the "Box" scene from the "Experience" Reality File
+        // Show statistics such as fps and timing information
+        arView.showsStatistics=true
+        
+        
+        
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -25,7 +35,7 @@ class ViewController: UIViewController {
         let configuration = ARWorldTrackingConfiguration()
         if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed:"AR Resources",bundle:Bundle.main){
             configuration.detectionImages = imageToTrack
-            configuration.maximumNumberOfTrackedImages = 1
+            configuration.maximumNumberOfTrackedImages = 2
         }
         // Run the view's session
         arView.session.run(configuration)
@@ -47,30 +57,30 @@ class ViewController: UIViewController {
             node.addChildNode(planeNode)
             
             if imageAnchor.referenceImage.name == "StuffedShells"{
-           if let modelScene = SCNScene(named:"art.scnassets/redchair.scn"){
-                   if let modelNode = modelScene.rootNode.childNodes.first{
-                       planeNode.addChildNode(modelNode)
-                       modelNode.eulerAngles.x = .pi/2
-
-                        //Portal Start
-                        let innerSpaceSize: Float = 3.0 // [meters]
+                if let modelScene = SCNScene(named:"art.scnassets/redchair.scn"){
+                    if let modelNode = modelScene.rootNode.childNodes.first{
+                        planeNode.addChildNode(modelNode)
+                        modelNode.eulerAngles.x = .pi/2
+                        
+                       let innerSpaceSize: Float = 3.0 // [meters]
                         let innerSpaceMargin: Float = 0.02 // [meters]
                         let innerSpaceOcclusion: Float = 0.01 // [meters]
-                
+                        
                         // Add the box anchor to the scene
                         let portalAnchor = try! SpaceUmbrellas.loadScene()
-                        arView.scene.anchors.append(portalAnchor)
+                        //arView.scene.anchors.append(portalAnchor)
                         let boxSize: Float = innerSpaceSize + innerSpaceMargin
                         let boxMesh = MeshResource.generateBox(size: boxSize)
                         let material = OcclusionMaterial()
                         let occlusionBox = ModelEntity(mesh: boxMesh, materials: [material])
                         occlusionBox.position.y = boxSize / 2
-                        occlusionBox.position.z = -(innerSpaceMargin + innerSpaceOcclusion) // make door using occlusion
-                        portalAnchor.addChild(occlusionBox)
+                        occlusionBox.position.z = -(innerSpaceMargin + innerSpaceOcclusion)
                         
-//                       
-          }
-             }
+                        // make door using occlusion
+                        portalAnchor.addChild(occlusionBox)
+                       
+        }
+                }
             }
                     
         }
