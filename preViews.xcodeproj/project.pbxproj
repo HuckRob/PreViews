@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		06995071280381F900BD40B0 /* SpaceUmbrellas.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 06995070280381F900BD40B0 /* SpaceUmbrellas.rcproject */; };
-		06AC450628039EE3000F6B46 /* arsimplepotal in Resources */ = {isa = PBXBuildFile; fileRef = 06AC450528039EE3000F6B46 /* arsimplepotal */; };
 		2DDAC30427F78FA2002D828A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30327F78FA2002D828A /* AppDelegate.swift */; };
 		2DDAC30627F78FA2002D828A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30527F78FA2002D828A /* ViewController.swift */; };
 		2DDAC30827F78FA2002D828A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30727F78FA2002D828A /* Experience.rcproject */; };
@@ -36,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		06995070280381F900BD40B0 /* SpaceUmbrellas.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SpaceUmbrellas.rcproject; sourceTree = "<group>"; };
-		06AC450528039EE3000F6B46 /* arsimplepotal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = arsimplepotal; sourceTree = "<group>"; };
 		2DDAC30027F78FA2002D828A /* preViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = preViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDAC30327F78FA2002D828A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDAC30527F78FA2002D828A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 		2DDAC2F727F78FA2002D828A = {
 			isa = PBXGroup;
 			children = (
-				06AC450528039EE3000F6B46 /* arsimplepotal */,
 				2DDAC30227F78FA2002D828A /* preViews */,
 				2DDAC30127F78FA2002D828A /* Products */,
 			);
@@ -212,7 +209,6 @@
 			files = (
 				2DDAC31027F78FA3002D828A /* LaunchScreen.storyboard in Resources */,
 				2DDAC30D27F78FA3002D828A /* Assets.xcassets in Resources */,
-				06AC450628039EE3000F6B46 /* arsimplepotal in Resources */,
 				2DDAC30B27F78FA2002D828A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
