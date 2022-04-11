@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06995071280381F900BD40B0 /* SpaceUmbrellas.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 06995070280381F900BD40B0 /* SpaceUmbrellas.rcproject */; };
-		2DDAC30427F78FA2002D828A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30327F78FA2002D828A /* AppDelegate.swift */; };
+		06AC450C2804B9A9000F6B46 /* arsimplepotalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AC450B2804B9A9000F6B46 /* arsimplepotalApp.swift */; };
 		2DDAC30627F78FA2002D828A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30527F78FA2002D828A /* ViewController.swift */; };
 		2DDAC30827F78FA2002D828A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAC30727F78FA2002D828A /* Experience.rcproject */; };
 		2DDAC30B27F78FA2002D828A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDAC30927F78FA2002D828A /* Main.storyboard */; };
@@ -35,8 +35,8 @@
 
 /* Begin PBXFileReference section */
 		06995070280381F900BD40B0 /* SpaceUmbrellas.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SpaceUmbrellas.rcproject; sourceTree = "<group>"; };
+		06AC450B2804B9A9000F6B46 /* arsimplepotalApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = arsimplepotalApp.swift; sourceTree = "<group>"; };
 		2DDAC30027F78FA2002D828A /* preViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = preViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DDAC30327F78FA2002D828A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDAC30527F78FA2002D828A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DDAC30727F78FA2002D828A /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		2DDAC30A27F78FA2002D828A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		2DDAC30227F78FA2002D828A /* preViews */ = {
 			isa = PBXGroup;
 			children = (
-				2DDAC30327F78FA2002D828A /* AppDelegate.swift */,
+				06AC450B2804B9A9000F6B46 /* arsimplepotalApp.swift */,
 				2DDAC30527F78FA2002D828A /* ViewController.swift */,
 				2DDAC30727F78FA2002D828A /* Experience.rcproject */,
 				06995070280381F900BD40B0 /* SpaceUmbrellas.rcproject */,
@@ -236,8 +236,8 @@
 			files = (
 				2DDAC30627F78FA2002D828A /* ViewController.swift in Sources */,
 				06995071280381F900BD40B0 /* SpaceUmbrellas.rcproject in Sources */,
-				2DDAC30427F78FA2002D828A /* AppDelegate.swift in Sources */,
 				2DDAC30827F78FA2002D828A /* Experience.rcproject in Sources */,
+				06AC450C2804B9A9000F6B46 /* arsimplepotalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
