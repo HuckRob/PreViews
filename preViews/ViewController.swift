@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             node.addChildNode(planeNode)
             
             if imageAnchor.referenceImage.name ==  "Chipotle" {
-                if let modelScene = SCNScene(named:"SpaceUmbrellas.rcproject"){
+                if let modelScene = SCNScene(named:"Experience"){
                     if let modelNode = modelScene.rootNode.childNodes.first{
                         planeNode.addChildNode(modelNode)
                         modelNode.eulerAngles.x = .pi/2
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
                         let innerSpaceOcclusion: Float = 0.01 // [meters]
                         
                         // Add the box anchor to the scene
-                        let portalAnchor = try! SpaceUmbrellas.loadScene()
+                        let portalAnchor = try! Experience.loadScene()
                         arView.scene.anchors.append(portalAnchor)
                         let boxSize: Float = innerSpaceSize + innerSpaceMargin
                         let boxMesh = MeshResource.generateBox(size: boxSize)
@@ -82,10 +82,14 @@ class ViewController: UIViewController {
         }
                 }
             }
+            
                     
         }
         return node
     }
+   
+        
+        
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
         
