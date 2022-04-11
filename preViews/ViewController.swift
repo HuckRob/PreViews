@@ -13,8 +13,7 @@ import ARKit
 struct ARPortalView: UIViewRepresentable {
     
     
-   // let boxAnchor = try! SpaceUmbrellas.Umbrellas()
-    //var imageAnchorToEnitity: [ARImageAnchor: AnchorEntity] = [:]
+  
     
    
     
@@ -27,8 +26,7 @@ struct ARPortalView: UIViewRepresentable {
 
         // load one of bundled rcprojects as an inner space
         let portalAnchor = try! SpaceUmbrellas.loadUmbrellas()   // Portal 1: Umbrellas
-        // let portalAnchor = try! SpaceXmas.loadScene()        // Portal 2: Xmas
-        // let portalAnchor = try! SpaceNight.loadScene()      // Portal 3: Night
+        
 
         arView.scene.anchors.append(portalAnchor)
 
