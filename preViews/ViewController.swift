@@ -40,12 +40,23 @@ struct ARPortalView: UIViewRepresentable {
         portalAnchor.addChild(occlusionBox)
 
         // start the AR session.
+      //declares reference images as the assete AR Resources
+       /* guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else {
+            fatalError("Missing expected asset catalog resources.")
+        }*/
+       // arView.session.run(config)
        // let config = ARWorldTrackingConfiguration()
-       // config.planeDetection = [.horizontal]
+        //config.detectionImages = referenceImages// your images here
+       // config.maximumNumberOfTrackedImages = 1 // or up to 4
+        // also set other options like plane detection and environment texture if you want
         //arView.session.run(config)
+       /* let config = ARWorldTrackingConfiguration()
+        config.detectionImages = referenceImages
+        arView.session.run(config, options: [.resetTracking, .removeExistingAnchors])*/
 
         return arView
     }
+    
 
     func updateUIView(_ uiView: ARView, context: Context) {
     }
