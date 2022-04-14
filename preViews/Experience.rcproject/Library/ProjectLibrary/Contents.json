@@ -18,5 +18,10 @@
     "libraryIdentifier" : "42a0fdb39d7d8cefdd474103c69e056e",
     "format" : "model",
     "displayName" : "tims balls.usdz"
+  },
+  {
+    "libraryIdentifier" : "3785dd2b608948e948d708d194facfc7",
+    "format" : "image",
+    "displayName" : "ColdStone2.png"
   }
 ]
