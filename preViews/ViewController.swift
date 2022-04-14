@@ -25,7 +25,9 @@ struct ARPortalView: UIViewRepresentable {
         let arView = ARView(frame: .zero)
 
         // load one of bundled rcprojects as an inner space
-        let portalAnchor = try! SpaceUmbrellas.loadUmbrellas()   // Portal 1: Umbrellas
+        let portalAnchor = try! SpaceUmbrellas.loadUmbrellas()
+       // let portalAnchor =try! Experience.loadLibrary()
+        // Portal 1: Umbrellas
         
 
         arView.scene.anchors.append(portalAnchor)
